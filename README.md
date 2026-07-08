@@ -251,3 +251,17 @@ FreeFronts/
 ## License
 
 本项目代码（HTML/CSS/JS）为 MIT License。字体文件版权归各自发布方所有，详见上方授权信息。
+
+## 关注我
+
+**点赞 收藏 散会**
+
+[快手](https://v.kuaishou.com/5eo8Cv)
+
+[抖音]( https://v.douyin.com/CeiJMCp3o)
+
+[小红书](https://www.xiaohongshu.com/user/profile/60ed03f7000000000100bf52)
+
+[哔哩](https://b23.tv/jITjmL8)
+
+![B站.png](https://github.com/ShuShuHong/GoodMp4Cover/raw/main/qr/B%E7%AB%99.png)![快手.png](https://github.com/ShuShuHong/GoodMp4Cover/raw/main/qr/%E5%BF%AB%E6%89%8B.png)![抖音.png](https://github.com/ShuShuHong/GoodMp4Cover/raw/main/qr/%E6%8A%96%E9%9F%B3.png)![红书.png](https://github.com/ShuShuHong/GoodMp4Cover/raw/main/qr/%E7%BA%A2%E4%B9%A6.png)![视频号.png](https://github.com/ShuShuHong/GoodMp4Cover/raw/main/qr/%E8%A7%86%E9%A2%91%E5%8F%B7.png)
