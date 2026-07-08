@@ -244,7 +244,7 @@ FreeFronts/
 ├── 使用说明.md              # 使用说明
 ├── fonts_all.zip            # 全部字体打包（已排除在git外）
 ├── .gitignore               # Git 忽略规则（排除风险字体和ZIP包）
-└── snap.jpg                 # 截图
+└── lookme.jpg               # 截图
 ```
 
 **Git 忽略的文件**（`.gitignore`）：
