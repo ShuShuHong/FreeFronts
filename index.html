@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FreeFronts — 可免费商用字体（2026.4版本）</title>
+<style>
+
+@font-face {
+  font-family: '思源黑体';
+  src: url('fonts/01_思源黑体_Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '思源宋体';
+  src: url('fonts/02_思源宋体_Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '庞门正道标题体';
+  src: url('fonts/03_庞门正道标题体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '庞门正道标题体免费版';
+  src: url('fonts/04_庞门正道标题体免费版.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '庞门正道真贵楷体';
+  src: url('fonts/05_庞门正道真贵楷体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '庞门正道粗书体';
+  src: url('fonts/06_庞门正道粗书体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '庞门正道细线体';
+  src: url('fonts/07_庞门正道细线体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '站酷庆科黄油体';
+  src: url('fonts/08_站酷庆科黄油体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '站酷文艺体';
+  src: url('fonts/09_站酷文艺体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '站酷小薇LOGO体';
+  src: url('fonts/10_站酷小薇LOGO体.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '站酷酷黑体';
+  src: url('fonts/11_站酷酷黑体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '站酷快乐体';
+  src: url('fonts/12_站酷快乐体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '站酷高端黑';
+  src: url('fonts/13_站酷高端黑.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '优设标题黑';
+  src: url('fonts/15_优设标题黑.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '优设标题圆';
+  src: url('fonts/16_优设标题圆.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '优设好身体';
+  src: url('fonts/17_优设好身体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '优设鲨鱼菲特健康体';
+  src: url('fonts/18_优设鲨鱼菲特健康体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '方正黑体';
+  src: url('fonts/19_方正黑体.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '方正书宋';
+  src: url('fonts/20_方正书宋.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '方正仿宋';
+  src: url('fonts/21_方正仿宋.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '方正楷体';
+  src: url('fonts/22_方正楷体.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '仓耳渔阳体';
+  src: url('fonts/23_仓耳渔阳体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '仓耳非白';
+  src: url('fonts/24_仓耳非白.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '仓耳与墨';
+  src: url('fonts/25_仓耳与墨.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '仓耳舒圆体';
+  src: url('fonts/26_仓耳舒圆体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '仓耳小丸子';
+  src: url('fonts/27_仓耳小丸子.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '仓耳周珂正大榜书';
+  src: url('fonts/28_仓耳周珂正大榜书.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '鸿雷板书简体';
+  src: url('fonts/29_鸿雷板书简体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '鸿雷行书简体';
+  src: url('fonts/30_鸿雷行书简体.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '鸿雷拙书简体';
+  src: url('fonts/31_鸿雷拙书简体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '演示悠然小楷';
+  src: url('fonts/32_演示悠然小楷.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '演示夏行楷';
+  src: url('fonts/33_演示夏行楷.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '演示春风楷';
+  src: url('fonts/34_演示春风楷.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '演示秋鸿楷';
+  src: url('fonts/35_演示秋鸿楷.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '演示佛系体';
+  src: url('fonts/36_演示佛系体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '阿里妈妈东方大楷';
+  src: url('fonts/37_阿里妈妈东方大楷.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '阿里妈妈数黑体';
+  src: url('fonts/38_阿里妈妈数黑体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '阿里妈妈刀隶体';
+  src: url('fonts/39_阿里妈妈刀隶体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '阿里妈妈方圆体';
+  src: url('fonts/40_阿里妈妈方圆体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '阿里巴巴普惠体3.0';
+  src: url('fonts/41_阿里巴巴普惠体_Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '钉钉进步体';
+  src: url('fonts/42_钉钉进步体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '阿里妈妈灵动体';
+  src: url('fonts/43_阿里妈妈灵动体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '手书体';
+  src: url('fonts/44_手书体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '沐瑶软笔手写体';
+  src: url('fonts/45_沐瑶软笔手写体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '杨任东竹石体';
+  src: url('fonts/46_杨任东竹石体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '锐字真言体';
+  src: url('fonts/47_锐字真言体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '江城律动黑';
+  src: url('fonts/48_江城律动黑.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '江西拙楷';
+  src: url('fonts/49_江西拙楷.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '字制区喜脉体';
+  src: url('fonts/50_字制区喜脉体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '三极行楷简体-粗';
+  src: url('fonts/51_三极行楷简体-粗.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '钉钉进步体';
+  src: url('fonts/52_钉钉进步体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '抖音美好体';
+  src: url('fonts/53_抖音美好体.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '字由芳华体';
+  src: url('fonts/54_字由芳华体.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '字由文艺黑';
+  src: url('fonts/55_字由文艺黑.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '优设字由棒棒体';
+  src: url('fonts/56_优设字由棒棒体.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '云峰飞云体';
+  src: url('fonts/57_云峰飞云体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '云峰寒蝉体';
+  src: url('fonts/58_云峰寒蝉体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '云峰重庆山城棒棒体';
+  src: url('fonts/59_云峰重庆山城棒棒体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '胡晓波真帅体';
+  src: url('fonts/60_胡晓波真帅体.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '胡晓波骚包体';
+  src: url('fonts/61_胡晓波骚包体.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '胡晓波男神体';
+  src: url('fonts/62_胡晓波男神体.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '猫啃什锦黑';
+  src: url('fonts/63_猫啃什锦黑.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '飞波正点体';
+  src: url('fonts/64_飞波正点体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '联盟起艺卢帅正锐黑体';
+  src: url('fonts/65_联盟起艺卢帅正锐黑体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '创客贴金刚体';
+  src: url('fonts/66_创客贴金刚体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '快看世界体';
+  src: url('fonts/67_快看世界体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '小可奶酪体';
+  src: url('fonts/68_小可奶酪体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '仓迹高德国妙黑';
+  src: url('fonts/69_仓迹高德国妙黑.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '得意黑';
+  src: url('fonts/70_得意黑.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '飞花宋体';
+  src: url('fonts/71_飞花宋体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '猴尊宋体';
+  src: url('fonts/72_猴尊宋体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '美呗嘿嘿体';
+  src: url('fonts/73_美呗嘿嘿体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '润植家刻本简体';
+  src: url('fonts/74_润植家刻本简体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '字体圈欣意冠黑体4.0';
+  src: url('fonts/75_字体圈欣意冠黑体4.0.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aa厚底黑';
+  src: url('fonts/76_Aa厚底黑.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OPPO Sans 4.0';
+  src: url('fonts/77_OPPOSans_Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '字魂扁桃体';
+  src: url('fonts/78_字魂扁桃体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '中华薪火体';
+  src: url('fonts/79_中华薪火体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0f0f14;--surface:#1a1a24;--surface2:#22222e;--border:#2a2a3a;--text:#e0e0e8;--text2:#8888a0;--accent:#6c8cff;--accent2:#ff6b9d;--accent3:#4ade80;--radius:12px;--transition:.2s cubic-bezier(.4,0,.2,1)}
+html{font-size:16px;scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6;-webkit-font-smoothing:antialiased}
+.app{max-width:1200px;margin:0 auto;padding:16px;display:flex;flex-direction:column;gap:20px;height:100dvh}
+.header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:12px 0}
+.logo{font-size:1.5rem;font-weight:800;letter-spacing:-.02em;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.logo-sub{font-size:.8rem;color:var(--text2);font-weight:400;letter-spacing:0;-webkit-text-fill-color:var(--text2)}
+.main-grid{display:grid;grid-template-columns:360px 1fr;grid-template-rows:1fr;gap:20px;flex:1;min-height:0;overflow:hidden}
+@media(max-width:768px){.main-grid{grid-template-columns:1fr;min-height:0}.sidebar{order:2}}
+.sidebar{display:flex;flex-direction:column;gap:16px;min-height:0;overflow:hidden}.sidebar,.preview-area{min-height:0}
+.panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;display:flex;flex-direction:column}
+.panel-title{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--text2);margin-bottom:10px;font-weight:600;display:flex;justify-content:space-between;align-items:center;flex-shrink:0}
+.panel-count{font-size:.7rem;color:var(--accent);font-weight:400;text-transform:none;letter-spacing:0}
+.copy-btn{padding:3px 10px;border-radius:5px;border:1px solid var(--border);background:var(--surface2);color:var(--text2);cursor:pointer;font-size:.65rem;transition:all var(--transition);flex-shrink:0;margin-left:8px}
+.copy-btn:hover{border-color:var(--accent);color:var(--accent)}
+.font-search{margin-bottom:10px;flex-shrink:0}
+.font-search input{width:100%;padding:8px 12px;border-radius:8px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:.85rem;outline:none;font-family:inherit}
+.font-search input:focus{border-color:var(--accent)}
+.font-search input::placeholder{color:var(--text2)}
+.font-list-panel{flex:1;overflow-y:auto;min-height:0;max-height:calc(100dvh - 320px);border:1px solid var(--border);border-radius:8px;background:var(--surface2)}
+.font-list-panel::-webkit-scrollbar{width:5px}
+.font-list-panel::-webkit-scrollbar-track{background:transparent}
+.font-list-panel::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+.font-cat-header{padding:8px 14px 3px;font-size:.68rem;color:var(--accent);text-transform:uppercase;letter-spacing:.06em;font-weight:600;background:var(--surface2);position:sticky;top:0;z-index:1;border-bottom:1px solid var(--border)}
+.font-option{display:flex;align-items:center;padding:9px 14px;cursor:pointer;transition:background var(--transition);gap:6px;border-bottom:1px solid rgba(255,255,255,.03)}
+.font-option:last-child{border-bottom:none}
+.font-option:hover{background:var(--surface)}
+.font-option.active{background:rgba(108,140,255,.12);color:var(--accent);border-left:3px solid var(--accent);padding-left:11px}
+.font-option-num{font-size:.65rem;color:var(--text2);flex-shrink:0;min-width:20px;text-align:right}
+.font-option-name{font-size:.88rem;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.font-option.hidden{display:none}
+.no-results{padding:20px;text-align:center;color:var(--text2);font-size:.85rem}
+.control-group{margin-bottom:12px}
+.control-group:last-child{margin-bottom:0}
+.control-label{display:flex;justify-content:space-between;font-size:.8rem;color:var(--text2);margin-bottom:6px}
+.control-value{color:var(--accent);font-weight:600}
+input[type=range]{-webkit-appearance:none;width:100%;height:6px;border-radius:3px;background:var(--border);outline:none}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--accent);cursor:pointer;border:2px solid var(--bg);box-shadow:0 0 0 2px var(--accent)}
+.preview-area{display:flex;flex-direction:column;gap:16px;flex:1}
+.text-input-wrap{position:relative}
+.text-input-wrap textarea{width:100%;min-height:100px;padding:16px;border:2px solid var(--border);border-radius:var(--radius);background:var(--surface);color:var(--text);font-size:1rem;resize:vertical;outline:none;transition:border-color var(--transition);font-family:inherit;line-height:1.6}
+.text-input-wrap textarea:focus{border-color:var(--accent)}
+.char-count{position:absolute;bottom:12px;right:16px;font-size:.7rem;color:var(--text2);pointer-events:none;background:var(--surface);padding:2px 6px;border-radius:4px}
+.presets{display:flex;gap:6px;flex-wrap:wrap}
+.preset-btn{padding:6px 14px;border-radius:20px;border:1px solid var(--border);background:var(--surface);color:var(--text2);cursor:pointer;font-size:.78rem;transition:all var(--transition);white-space:nowrap}
+.preset-btn:hover{border-color:var(--text2);color:var(--text)}
+.preview-canvas{flex:1;background:var(--surface);border:2px solid var(--border);border-radius:var(--radius);padding:32px;min-height:200px;display:flex;align-items:center;justify-content:center;overflow:auto;transition:border-color var(--transition)}
+.preview-text{width:100%;word-break:break-all;overflow-wrap:break-word;white-space:pre-wrap;transition:font-size .15s ease;line-height:1.8}
+.download-panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.download-info{display:flex;flex-direction:column;gap:2px}
+.download-name{font-weight:600;font-size:.9rem}
+.download-meta{font-size:.75rem;color:var(--text2)}
+.download-btn{padding:10px 24px;border-radius:8px;border:none;background:var(--accent);color:#fff;font-size:.85rem;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:8px;transition:all var(--transition);text-decoration:none}
+.download-btn:hover{background:#5a7aee;transform:translateY(-1px);box-shadow:0 4px 16px rgba(108,140,255,.3)}
+.zip-dl{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:8px;background:var(--accent);color:#fff;font-size:.8rem;font-weight:600;text-decoration:none;transition:all var(--transition);flex-shrink:0}
+.zip-dl:hover{background:#5a7aee;transform:translateY(-1px);box-shadow:0 4px 16px rgba(108,140,255,.3)}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--surface2);color:var(--text);padding:10px 24px;border-radius:20px;border:1px solid var(--border);font-size:.85rem;z-index:100;opacity:0;pointer-events:none;transition:opacity .3s}
+.toast.show{opacity:1}
+.footer{text-align:center;padding:16px 0;font-size:.7rem;color:var(--text2);border-top:1px solid var(--border)}
+.footer a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="header"><div><div class="logo">FreeFronts <span class="logo-sub">可免费商用字体（2026.4版本）</span></div></div><a class="zip-dl" href="fonts_all.zip" download><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>全部字体打包下载 (ZIP)</a></header>
+<div class="main-grid">
+<aside class="sidebar">
+<div class="panel" style="flex:1;min-height:0">
+<div class="panel-title">选择字体 <span style="display:flex;align-items:center;gap:6px"><span class="panel-count" id="fontCount"></span><button class="copy-btn" id="copyBtn" type="button" title="复制含序号的字体名">复制字体名称</button></span></div>
+<div class="font-search"><input type="text" id="fontSearch" placeholder="搜索字体…" autocomplete="off"></div>
+<div class="font-list-panel" id="fontListPanel"><div id="fontListInner"></div></div>
+</div>
+<div class="panel">
+<div class="panel-title">预览设置</div>
+<div class="control-group"><div class="control-label"><span>字号</span><span class="control-value" id="sizeValue">48px</span></div><input type="range" id="sizeSlider" min="12" max="200" value="48" step="1"></div>
+<div class="control-group"><div class="control-label"><span>行高</span><span class="control-value" id="lineHeightValue">1.8</span></div><input type="range" id="lineHeightSlider" min="1" max="3" value="1.8" step="0.1"></div>
+</div>
+</aside>
+<main class="preview-area">
+<div class="text-input-wrap"><textarea id="textInput" placeholder="在此输入参考文本，预览字体效果…" maxlength="2000">天地玄黄，宇宙洪荒。日月盈昃，辰宿列张。
+寒来暑往，秋收冬藏。闰余成岁，律吕调阳。
+Hello World — 字体让设计更有力。</textarea><div class="char-count" id="charCount">0 字</div></div>
+<div class="presets">
+<button class="preset-btn" data-text="天地玄黄，宇宙洪荒。日月盈昃，辰宿列张。寒来暑往，秋收冬藏。" type="button">千字文</button>
+<button class="preset-btn" data-text="春风得意马蹄疾，一日看尽长安花。" type="button">唐诗</button>
+<button class="preset-btn" data-text="The quick brown fox jumps over the lazy dog. 敏捷的棕狐狸跳过懒狗。" type="button">中英混排</button>
+<button class="preset-btn" data-text="0123456789 ¥$€%#@! 壹贰叁肆伍陆柒捌玖拾" type="button">数字符号</button>
+<button class="preset-btn" data-text="字体设计是视觉传达的核心。好的字体让阅读变成享受，让品牌拥有性格。选择字体，就是为内容选择声音。" type="button">设计文案</button>
+</div>
+<div class="preview-canvas" id="previewCanvas"><div class="preview-text" id="previewText">天地玄黄，宇宙洪荒。日月盈昃，辰宿列张。<br>寒来暑往，秋收冬藏。闰余成岁，律吕调阳。<br>Hello World — 字体让设计更有力。</div></div>
+<div class="download-panel" id="downloadPanel">
+<div class="download-info"><div class="download-name" id="downloadName">01 思源黑体</div><div class="download-meta" id="downloadMeta">免费可商用</div></div>
+<button class="download-btn" id="downloadBtn" type="button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>下载字体</button>
+</div>
+</main>
+</div>
+<footer class="footer">FreeFronts · 所有字体基于各自授权协议发布 · 可自由使用与分发</footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+var fonts=[{id:'f01',num:'01',name:'思源黑体',cat:'hei',file:'fonts/01_思源黑体_Regular.ttf',ext:'truetype'},
+{id:'f02',num:'02',name:'思源宋体',cat:'song',file:'fonts/02_思源宋体_Regular.ttf',ext:'truetype'},
+{id:'f03',num:'03',name:'庞门正道标题体',cat:'title',file:'fonts/03_庞门正道标题体.ttf',ext:'truetype'},
+{id:'f04',num:'04',name:'庞门正道标题体免费版',cat:'title',file:'fonts/04_庞门正道标题体免费版.ttf',ext:'truetype'},
+{id:'f05',num:'05',name:'庞门正道真贵楷体',cat:'hand',file:'fonts/05_庞门正道真贵楷体.ttf',ext:'truetype'},
+{id:'f06',num:'06',name:'庞门正道粗书体',cat:'art',file:'fonts/06_庞门正道粗书体.ttf',ext:'truetype'},
+{id:'f07',num:'07',name:'庞门正道细线体',cat:'title',file:'fonts/07_庞门正道细线体.ttf',ext:'truetype'},
+{id:'f08',num:'08',name:'站酷庆科黄油体',cat:'title',file:'fonts/08_站酷庆科黄油体.ttf',ext:'truetype'},
+{id:'f09',num:'09',name:'站酷文艺体',cat:'title',file:'fonts/09_站酷文艺体.ttf',ext:'truetype'},
+{id:'f10',num:'10',name:'站酷小薇LOGO体',cat:'title',file:'fonts/10_站酷小薇LOGO体.otf',ext:'opentype'},
+{id:'f11',num:'11',name:'站酷酷黑体',cat:'hei',file:'fonts/11_站酷酷黑体.ttf',ext:'truetype'},
+{id:'f12',num:'12',name:'站酷快乐体',cat:'title',file:'fonts/12_站酷快乐体.ttf',ext:'truetype'},
+{id:'f13',num:'13',name:'站酷高端黑',cat:'hei',file:'fonts/13_站酷高端黑.ttf',ext:'truetype'},
+{id:'f15',num:'15',name:'优设标题黑',cat:'hei',file:'fonts/15_优设标题黑.ttf',ext:'truetype'},
+{id:'f16',num:'16',name:'优设标题圆',cat:'round',file:'fonts/16_优设标题圆.otf',ext:'opentype'},
+{id:'f17',num:'17',name:'优设好身体',cat:'title',file:'fonts/17_优设好身体.ttf',ext:'truetype'},
+{id:'f18',num:'18',name:'优设鲨鱼菲特健康体',cat:'title',file:'fonts/18_优设鲨鱼菲特健康体.ttf',ext:'truetype'},
+{id:'f19',num:'19',name:'方正黑体',cat:'hei',file:'fonts/19_方正黑体.TTF',ext:'truetype'},
+{id:'f20',num:'20',name:'方正书宋',cat:'song',file:'fonts/20_方正书宋.TTF',ext:'truetype'},
+{id:'f21',num:'21',name:'方正仿宋',cat:'song',file:'fonts/21_方正仿宋.TTF',ext:'truetype'},
+{id:'f22',num:'22',name:'方正楷体',cat:'kai',file:'fonts/22_方正楷体.TTF',ext:'truetype'},
+{id:'f23',num:'23',name:'仓耳渔阳体',cat:'hei',file:'fonts/23_仓耳渔阳体.ttf',ext:'truetype'},
+{id:'f24',num:'24',name:'仓耳非白',cat:'hei',file:'fonts/24_仓耳非白.ttf',ext:'truetype'},
+{id:'f25',num:'25',name:'仓耳与墨',cat:'hei',file:'fonts/25_仓耳与墨.ttf',ext:'truetype'},
+{id:'f26',num:'26',name:'仓耳舒圆体',cat:'round',file:'fonts/26_仓耳舒圆体.ttf',ext:'truetype'},
+{id:'f27',num:'27',name:'仓耳小丸子',cat:'title',file:'fonts/27_仓耳小丸子.ttf',ext:'truetype'},
+{id:'f28',num:'28',name:'仓耳周珂正大榜书',cat:'art',file:'fonts/28_仓耳周珂正大榜书.ttf',ext:'truetype'},
+{id:'f29',num:'29',name:'鸿雷板书简体',cat:'hand',file:'fonts/29_鸿雷板书简体.ttf',ext:'truetype'},
+{id:'f30',num:'30',name:'鸿雷行书简体',cat:'hand',file:'fonts/30_鸿雷行书简体.otf',ext:'opentype'},
+{id:'f31',num:'31',name:'鸿雷拙书简体',cat:'hand',file:'fonts/31_鸿雷拙书简体.ttf',ext:'truetype'},
+{id:'f32',num:'32',name:'演示悠然小楷',cat:'kai',file:'fonts/32_演示悠然小楷.ttf',ext:'truetype'},
+{id:'f33',num:'33',name:'演示夏行楷',cat:'kai',file:'fonts/33_演示夏行楷.ttf',ext:'truetype'},
+{id:'f34',num:'34',name:'演示春风楷',cat:'kai',file:'fonts/34_演示春风楷.ttf',ext:'truetype'},
+{id:'f35',num:'35',name:'演示秋鸿楷',cat:'kai',file:'fonts/35_演示秋鸿楷.ttf',ext:'truetype'},
+{id:'f36',num:'36',name:'演示佛系体',cat:'hand',file:'fonts/36_演示佛系体.ttf',ext:'truetype'},
+{id:'f37',num:'37',name:'阿里妈妈东方大楷',cat:'kai',file:'fonts/37_阿里妈妈东方大楷.ttf',ext:'truetype'},
+{id:'f38',num:'38',name:'阿里妈妈数黑体',cat:'hei',file:'fonts/38_阿里妈妈数黑体.ttf',ext:'truetype'},
+{id:'f39',num:'39',name:'阿里妈妈刀隶体',cat:'art',file:'fonts/39_阿里妈妈刀隶体.ttf',ext:'truetype'},
+{id:'f40',num:'40',name:'阿里妈妈方圆体',cat:'round',file:'fonts/40_阿里妈妈方圆体.ttf',ext:'truetype'},
+{id:'f41',num:'41',name:'阿里巴巴普惠体3.0',cat:'hei',file:'fonts/41_阿里巴巴普惠体_Regular.ttf',ext:'truetype'},
+{id:'f42',num:'42',name:'钉钉进步体',cat:'hei',file:'fonts/42_钉钉进步体.ttf',ext:'truetype'},
+{id:'f43',num:'43',name:'阿里妈妈灵动体',cat:'hei',file:'fonts/43_阿里妈妈灵动体.ttf',ext:'truetype',note:'英文字体'},
+{id:'f44',num:'44',name:'手书体',cat:'hand',file:'fonts/44_手书体.ttf',ext:'truetype'},
+{id:'f45',num:'45',name:'沐瑶软笔手写体',cat:'hand',file:'fonts/45_沐瑶软笔手写体.ttf',ext:'truetype'},
+{id:'f46',num:'46',name:'杨任东竹石体',cat:'art',file:'fonts/46_杨任东竹石体.ttf',ext:'truetype'},
+{id:'f47',num:'47',name:'锐字真言体',cat:'hei',file:'fonts/47_锐字真言体.ttf',ext:'truetype'},
+{id:'f48',num:'48',name:'江城律动黑',cat:'hei',file:'fonts/48_江城律动黑.ttf',ext:'truetype'},
+{id:'f49',num:'49',name:'江西拙楷',cat:'art',file:'fonts/49_江西拙楷.ttf',ext:'truetype'},
+{id:'f50',num:'50',name:'字制区喜脉体',cat:'hand',file:'fonts/50_字制区喜脉体.ttf',ext:'truetype'},
+{id:'f51',num:'51',name:'三极行楷简体-粗',cat:'kai',file:'fonts/51_三极行楷简体-粗.ttf',ext:'truetype'},
+{id:'f52',num:'52',name:'钉钉进步体',cat:'hei',file:'fonts/52_钉钉进步体.ttf',ext:'truetype'},
+{id:'f53',num:'53',name:'抖音美好体',cat:'title',file:'fonts/53_抖音美好体.otf',ext:'opentype'},
+{id:'f54',num:'54',name:'字由芳华体',cat:'art',file:'fonts/54_字由芳华体.otf',ext:'opentype'},
+{id:'f55',num:'55',name:'字由文艺黑',cat:'hei',file:'fonts/55_字由文艺黑.otf',ext:'opentype'},
+{id:'f56',num:'56',name:'优设字由棒棒体',cat:'title',file:'fonts/56_优设字由棒棒体.otf',ext:'opentype'},
+{id:'f57',num:'57',name:'云峰飞云体',cat:'art',file:'fonts/57_云峰飞云体.ttf',ext:'truetype'},
+{id:'f58',num:'58',name:'云峰寒蝉体',cat:'art',file:'fonts/58_云峰寒蝉体.ttf',ext:'truetype'},
+{id:'f59',num:'59',name:'云峰重庆山城棒棒体',cat:'art',file:'fonts/59_云峰重庆山城棒棒体.ttf',ext:'truetype'},
+{id:'f60',num:'60',name:'胡晓波真帅体',cat:'hei',file:'fonts/60_胡晓波真帅体.otf',ext:'opentype'},
+{id:'f61',num:'61',name:'胡晓波骚包体',cat:'hei',file:'fonts/61_胡晓波骚包体.otf',ext:'opentype'},
+{id:'f62',num:'62',name:'胡晓波男神体',cat:'hei',file:'fonts/62_胡晓波男神体.otf',ext:'opentype'},
+{id:'f63',num:'63',name:'猫啃什锦黑',cat:'hei',file:'fonts/63_猫啃什锦黑.ttf',ext:'truetype'},
+{id:'f64',num:'64',name:'飞波正点体',cat:'art',file:'fonts/64_飞波正点体.ttf',ext:'truetype'},
+{id:'f65',num:'65',name:'联盟起艺卢帅正锐黑体',cat:'hei',file:'fonts/65_联盟起艺卢帅正锐黑体.ttf',ext:'truetype'},
+{id:'f66',num:'66',name:'创客贴金刚体',cat:'title',file:'fonts/66_创客贴金刚体.ttf',ext:'truetype'},
+{id:'f67',num:'67',name:'快看世界体',cat:'title',file:'fonts/67_快看世界体.ttf',ext:'truetype'},
+{id:'f68',num:'68',name:'小可奶酪体',cat:'title',file:'fonts/68_小可奶酪体.ttf',ext:'truetype'},
+{id:'f69',num:'69',name:'仓迹高德国妙黑',cat:'hei',file:'fonts/69_仓迹高德国妙黑.ttf',ext:'truetype'},
+{id:'f70',num:'70',name:'得意黑',cat:'hei',file:'fonts/70_得意黑.ttf',ext:'truetype'},
+{id:'f71',num:'71',name:'飞花宋体',cat:'song',file:'fonts/71_飞花宋体.ttf',ext:'truetype'},
+{id:'f72',num:'72',name:'猴尊宋体',cat:'song',file:'fonts/72_猴尊宋体.ttf',ext:'truetype'},
+{id:'f73',num:'73',name:'美呗嘿嘿体',cat:'title',file:'fonts/73_美呗嘿嘿体.ttf',ext:'truetype'},
+{id:'f74',num:'74',name:'润植家刻本简体',cat:'art',file:'fonts/74_润植家刻本简体.ttf',ext:'truetype'},
+{id:'f75',num:'75',name:'字体圈欣意冠黑体4.0',cat:'hei',file:'fonts/75_字体圈欣意冠黑体4.0.ttf',ext:'truetype'},
+{id:'f76',num:'76',name:'Aa厚底黑',cat:'hei',file:'fonts/76_Aa厚底黑.ttf',ext:'truetype'},
+{id:'f77',num:'77',name:'OPPO Sans 4.0',cat:'hei',file:'fonts/77_OPPOSans_Regular.ttf',ext:'truetype'},
+{id:'f78',num:'78',name:'字魂扁桃体',cat:'art',file:'fonts/78_字魂扁桃体.ttf',ext:'truetype'},
+{id:'f79',num:'79',name:'中华薪火体',cat:'art',file:'fonts/79_中华薪火体.ttf',ext:'truetype'}];
+var catNames={'hei':'黑体','song':'宋体/仿宋','kai':'楷体','title':'标题/创意','hand':'手写体','art':'书法/艺术','round':'圆体'};
+var state={activeFontId:'f01',fontSize:48,lineHeight:1.8};
+var $=function(id){return document.getElementById(id);};
+var fontListInner=$('fontListInner'),fontSearch=$('fontSearch'),textInput=$('textInput'),previewText=$('previewText'),charCount=$('charCount'),sizeSlider=$('sizeSlider'),sizeValue=$('sizeValue'),lineHeightSlider=$('lineHeightSlider'),lineHeightValue=$('lineHeightValue'),downloadName=$('downloadName'),downloadMeta=$('downloadMeta'),downloadBtn=$('downloadBtn'),toast=$('toast'),fontCount=$('fontCount'),copyBtn=$('copyBtn');
+fontCount.textContent=fonts.length+' 款';
+
+function getActiveFont(){return fonts.find(function(f){return f.id===state.activeFontId;});}
+
+function renderFontList(filter){
+  filter=(filter||'').toLowerCase();
+  var html='';
+  var cats={};
+  fonts.forEach(function(f){if(!cats[f.cat])cats[f.cat]=[];cats[f.cat].push(f);});
+  var hasAny=false;
+  var catOrder=['hei','song','kai','title','hand','art','round'];
+  catOrder.forEach(function(c){
+    if(!cats[c])return;
+    var items=cats[c];
+    var catHtml='';
+    items.forEach(function(f){
+      var match=!filter||f.name.toLowerCase().indexOf(filter)>=0||f.num.indexOf(filter)>=0;
+      if(!match)return;
+      hasAny=true;
+      var active=f.id===state.activeFontId?' active':'';
+      catHtml+='<div class="font-option'+active+'" data-font-id="'+f.id+'" style="font-family:\''+f.name+'\'"><span class="font-option-num">'+f.num+'</span><span class="font-option-name">'+f.name+'</span></div>';
+    });
+    if(catHtml)html+='<div class="font-cat-header">'+catNames[c]+'</div>'+catHtml;
+  });
+  if(!hasAny)html='<div class="no-results">未找到匹配字体</div>';
+  fontListInner.innerHTML=html;
+  fontListInner.querySelectorAll('.font-option').forEach(function(opt){opt.addEventListener('click',function(){selectFont(opt.dataset.fontId);});});
+}
+
+function selectFont(fontId){
+  state.activeFontId=fontId;
+  var font=getActiveFont();
+  renderFontList(fontSearch.value);
+  applyPreview();
+}
+
+function applyPreview(){
+  var font=getActiveFont();
+  previewText.style.fontFamily="'"+font.name+"'";
+  previewText.style.fontWeight='normal';
+  previewText.style.fontSize=state.fontSize+'px';
+  previewText.style.lineHeight=state.lineHeight;
+  downloadName.textContent=font.num+' '+font.name;
+  downloadMeta.textContent='免费可商用 · '+catNames[font.cat];
+  if(font.note)downloadMeta.textContent+=' · '+font.note;
+}
+
+function updatePreviewText(){
+  var val=textInput.value||'请输入参考文本…';
+  previewText.innerHTML=val.replace(/\n/g,'<br>');
+  charCount.textContent=textInput.value.length+' 字';
+}
+
+function handleDownload(){
+  var font=getActiveFont();
+  var fileName=font.num+'_'+font.name+'.'+font.ext.replace('truetype','ttf').replace('opentype','otf');
+  var a=document.createElement('a');a.href=font.file;a.download=fileName;
+  document.body.appendChild(a);a.click();document.body.removeChild(a);
+  showToast('下载 '+font.name);
+}
+
+function copyFontName(){
+  var font=getActiveFont();
+  var text=font.num+' '+font.name;
+  var ta=document.createElement('textarea');
+  ta.value=text;ta.style.position='fixed';ta.style.left='-9999px';
+  document.body.appendChild(ta);ta.select();
+  try{document.execCommand('copy');showToast('已复制: '+text);}catch(e){showToast('复制失败，请手动复制');}
+  document.body.removeChild(ta);
+}
+
+var toastTimer;
+function showToast(msg){toast.textContent=msg;toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(function(){toast.classList.remove('show');},2000);}
+
+function init(){
+  renderFontList('');
+  applyPreview();
+  updatePreviewText();
+  fontSearch.addEventListener('input',function(){renderFontList(fontSearch.value);});
+  textInput.addEventListener('input',function(){updatePreviewText();applyPreview();});
+  sizeSlider.addEventListener('input',function(){state.fontSize=parseInt(sizeSlider.value);sizeValue.textContent=state.fontSize+'px';applyPreview();});
+  lineHeightSlider.addEventListener('input',function(){state.lineHeight=parseFloat(lineHeightSlider.value);lineHeightValue.textContent=state.lineHeight;applyPreview();});
+  document.querySelectorAll('.preset-btn').forEach(function(btn){btn.addEventListener('click',function(){textInput.value=this.dataset.text;updatePreviewText();applyPreview();});});
+  downloadBtn.addEventListener('click',handleDownload);
+  copyBtn.addEventListener('click',copyFontName);
+  document.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();textInput.focus();}});
+}
+init();
+</script>
+</body>
+</html>
